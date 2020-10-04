@@ -9,6 +9,8 @@ I decided to create a simple avatar maker that could be used for an online chatr
 
 Here's the [Live Demo on Glitch](https://cuinjune-facemaker.glitch.me/).
 
+The images used in the app are downloaded from [Noun Project](https://thenounproject.com/).
+
 ## Setup
 
 1. You need to have [Python](https://realpython.com/installing-python/) installed on your computer
