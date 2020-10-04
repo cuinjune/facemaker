@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    max-width: 360px;
+    min-height: 612px; 
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    touch-action: pan-x pan-y; /* disable pinch zoom */
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 3px 8px rgb(175, 175, 175);
+    -moz-box-shadow: 2px 3px 8px  rgb(175, 175, 175);
+    box-shadow: 2px 3px 8px  rgb(175, 175, 175);
+}
+
+#title-container {
+    background-color: rgb(46, 153, 255);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+#face-container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#face {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#face-head1 {
+    position: absolute;
+    height: calc(50% * 0.8);
+    margin-top: calc(50% * 0);
+    display: block;
+}
+
+#face-head2 {
+    position: absolute;
+    height: calc(50% * 0.8);
+    margin-top: calc(50% * 0);
+    display: none;
+}
+
+#face-head3 {
+    position: absolute;
+    height: calc(50% * 0.8);
+    margin-left: calc(50% * -0.06);
+    margin-top: calc(50% * 0);
+    display: none;
+}
+
+#face-head4 {
+    position: absolute;
+    height: calc(50% * 0.8);
+    margin-top: calc(50% * 0);
+    display: none;
+}
+
+#face-head5 {
+    position: absolute;
+    height: calc(50% * 0.8);
+    margin-left: calc(50% * -0.18);
+    margin-top: calc(50% * 0);
+    display: none;
+}
+
+#face-eyes1 {
+    position: absolute;
+    height: calc(50% * 0.12);
+    margin-top: calc(50% * 0.05);
+    display: block;
+}
+
+#face-eyes2 {
+    position: absolute;
+    height: calc(50% * 0.092);
+    margin-top: calc(50% * 0.02);
+    display: none;
+}
+
+#face-eyes3 {
+    position: absolute;
+    height: calc(50% * 0.14);
+    margin-top: calc(50% * 0.02);
+    display: none;
+}
+
+#face-eyes4 {
+    position: absolute;
+    height: calc(50% * 0.15);
+    margin-top: calc(50% * 0);
+    display: none;
+}
+
+#face-eyes5 {
+    position: absolute;
+    height: calc(50% * 0.17);
+    margin-top: calc(50% * 0.05);
+    display: none;
+}
+
+#face-nose1 {
+    position: absolute;
+    height: calc(50% * 0.15);
+    margin-top: calc(50% * 0.43);
+    display: block;
+}
+
+#face-nose2 {
+    position: absolute;
+    height: calc(50% * 0.15);
+    margin-top: calc(50% * 0.42);
+    display: none;
+}
+
+#face-nose3 {
+    position: absolute;
+    height: calc(50% * 0.17);
+    margin-top: calc(50% * 0.4);
+    display: none;
+}
+
+#face-nose4 {
+    position: absolute;
+    height: calc(50% * 0.15);
+    margin-top: calc(50% * 0.42);
+    display: none;
+}
+
+#face-nose5 {
+    position: absolute;
+    height: calc(50% * 0.035);
+    margin-top: calc(50% * 0.6);
+    display: none;
+}
+
+#face-mouth1 {
+    position: absolute;
+    height: calc(50% * 0.08);
+    margin-top: calc(50% * 0.88);
+    display: block;
+}
+
+#face-mouth2 {
+    position: absolute;
+    height: calc(50% * 0.08);
+    margin-top: calc(50% * 0.9);
+    display: none;
+}
+
+#face-mouth3 {
+    position: absolute;
+    height: calc(50% * 0.022);
+    margin-top: calc(50% * 0.9);
+    display: none;
+}
+
+#face-mouth4 {
+    position: absolute;
+    height: calc(50% * 0.022);
+    margin-top: calc(50% * 0.9);
+    display: none;
+}
+
+#face-mouth5 {
+    position: absolute;
+    height: calc(50% * 0.08);
+    margin-top: calc(50% * 0.9);
+    display: none;
+}
+
+#buttons-container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.button {
+    width: 20%; /* 20 */
+    height: 100%; /* 100 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#head1 {
+    height: 80%;
+    filter: invert(12%) sepia(83%) saturate(10841%) hue-rotate(244deg) brightness(300%) contrast(153%);
+    opacity: 1.0;
+}
+
+#head2 {
+    height: 80%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#head3 {
+    height: 80%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#head4 {
+    height: 80%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#head5 {
+    height: 80%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#eyes1 {
+    height: 22%;
+    filter: invert(12%) sepia(83%) saturate(10841%) hue-rotate(244deg) brightness(300%) contrast(153%);
+    opacity: 1.0;
+}
+
+#eyes2 {
+    height: 17%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#eyes3 {
+    height: 25%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#eyes4 {
+    height: 27%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#eyes5 {
+    height: 30%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#nose1 {
+    height: 60%;
+    filter: invert(12%) sepia(83%) saturate(10841%) hue-rotate(244deg) brightness(300%) contrast(153%);
+    opacity: 1.0;
+}
+
+#nose2 {
+    height: 60%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#nose3 {
+    height: 65%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#nose4 {
+    height: 60%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#button-nose5 {
+    justify-content: flex-end;
+}
+
+#nose5 {
+    width: 35%;
+    height: 50%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#mouth1 {
+    height: 32%;
+    filter: invert(12%) sepia(83%) saturate(10841%) hue-rotate(244deg) brightness(300%) contrast(153%);
+    opacity: 1.0;
+}
+
+#mouth2 {
+    height: 27%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#mouth3 {
+    height: 7%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#mouth4 {
+    height: 7%;
+    filter: none;
+    opacity: 0.5;
+}
+
+#mouth5 {
+    height: 27%;
+    filter: none;
+    opacity: 0.5;
+}
