@@ -5,7 +5,7 @@
 
 This repo is the week4 assignment of the "Hand Held: Creative Tools for Phones" course at ITP.  
 The assignment was to design an interface that allows the user to combine image layers in different ways and producing artworks.  
-I decided to create a simple avatar maker that could be used for an online chatroom.
+I decided to create a simple avatar creator that could be used for an online chatroom.
 
 Here's the [Live Demo on Glitch](https://cuinjune-facemaker.glitch.me/).
 
